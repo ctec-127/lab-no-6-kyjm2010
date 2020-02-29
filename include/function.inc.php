@@ -14,7 +14,7 @@ function convertTemp($temp, $unit1, $unit2)
 
     if($unit1 == 'fahrenheit'){
         if($unit2 == 'celsius'){
-            $converted = (1.8*$temp)-32;
+            $converted = ($temp-32)*1.8;
         }elseif($unit2 == 'kelvin'){
             $converted = ($temp + 459.67)*1.8;
         } elseif($unit2 == 'fahrenheit'){
