@@ -32,6 +32,8 @@ function convertTemp($temp, $unit1, $unit2)
             $converted = $temp;
         }
         
+    } else {
+        echo "Please fill out the form entirely";
     }
     // conversion formulas
     // Celsius to Fahrenheit = T(°C) × 9/5 + 32
