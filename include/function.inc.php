@@ -32,8 +32,6 @@ function convertTemp($temp, $unit1, $unit2)
             $converted = $temp;
         }
         
-    } else {
-        echo "Please fill out the form entirely";
     }
     // conversion formulas
     // Celsius to Fahrenheit = T(°C) × 9/5 + 32
@@ -44,6 +42,10 @@ function convertTemp($temp, $unit1, $unit2)
     // Kelvin to Celsius = T(K) - 273.15
 
     // You need to develop the logic to convert the temperature based on the selections and input made
-    return $converted;
+    if(!empty($converted)){
+        return $converted;
+    } else {
+        echo "Please fill out the form entirely";
+    }
 } // end function
 ?>
